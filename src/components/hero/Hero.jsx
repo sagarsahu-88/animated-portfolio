@@ -2,6 +2,7 @@ import "./hero.scss";
 import {motion} from "framer-motion";
 
 
+
 const textVariants={
     initial:{
         x:-500,
@@ -41,6 +42,9 @@ const sliderVariants={
 };
 
 const Hero = () => {
+    
+
+   
   return (
     <div className="hero">
     <div className="wrapper">
@@ -54,8 +58,8 @@ const Hero = () => {
     <motion.h1 variants={textVariants}>Web developer and UI designer</motion.h1>
      
      <motion.div variants={textVariants} className="buttons">
-    <motion.button variants={textVariants}>Latest Work</motion.button>
-    <motion.button variants={textVariants}>Contact Me</motion.button>
+    <motion.button variants={textVariants} >Latest Work</motion.button>
+    <motion.button variants={textVariants} >Contact Me</motion.button>
     </motion.div>
     <motion.img variants={textVariants} animate="scrollButton" src="scroll.png"/>
     </motion.div>

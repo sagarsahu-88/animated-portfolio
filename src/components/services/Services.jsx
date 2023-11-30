@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import "./services.scss";
 import {useInView, motion} from "framer-motion";
-import Branding from "../branding/Branding";
+
 
 const variants={
     initial:{

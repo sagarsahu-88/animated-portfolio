@@ -1,3 +1,4 @@
+@import"../../app.scss";
 .services{
     background: linear-gradient(180deg,#0c0c1d,#111132);
     height: 100%;
@@ -11,6 +12,13 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        @include mobileAndroid{
+           align-self: center;
+           text-align: center;
+           flex-direction: column;
+      
+        }
+
         p{
             font-weight: 200;
             font-size: 20px;
@@ -23,6 +31,11 @@
             width: 150px;
             border: none;
             border-top: 0.5px solid gray;
+
+            @include mobileAndroid{
+                width: 300px;
+          
+            }
         }
         
 
@@ -35,19 +48,40 @@
         flex-direction: column;
         align-items: center;
 
+        @include mobileAndroid{
+            width: 100%;
+
+      
+        }
+
         .title{
             display: flex;
             gap: 50px;
             align-items: center;
+            @include mobileAndroid{
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+          
+            }
             img{
                 width: 250px;
                 height: 80px;
                 border-radius: 50px;
                 object-fit: cover;
+                @include mobileAndroid{
+                    width: 200px;
+                    height: 50px;
+              
+                }
             }
             h1{
                 font-size: 80px;
                 font-weight: 100;
+                @include mobileAndroid{
+                   font-size: 30px;
+              
+                }
             }
             button{
                 width: 250px;
@@ -57,6 +91,12 @@
                 border: none;
                 font-size: 23px;
                 cursor: pointer;
+                @include mobileAndroid{
+                    font-size:15px ;
+                    width: 150px;
+                    height: 50px;
+              
+                }
 
 
             }
@@ -68,6 +108,11 @@
         display: flex;
         max-width: 1300px;
         margin: auto;
+        @include mobileAndroid{
+            width: 300px;
+            flex-direction: column;
+            
+        }
 
         .box{
             padding: 50px;
@@ -75,12 +120,38 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @include mobileAndroid{
+                border: none;
+                align-items: center;
+                gap: 20px;
+                padding: 25px;
+          
+            }
+            p{
+                @include mobileAndroid{
+                   display: none;
+              
+                }
+            }
           
             button{
                 padding: 10px;
                 background-color: orange;
                 border: none;
                 cursor: pointer;
+
+                @include mobileAndroid{
+                   background-color: transparent;
+                   border: 1px solid orange;
+                   border-radius: 5px;
+                   color: orange;
+                   width: 50%;
+                   padding: 5px;
+
+
+
+              
+                }
             }
 
         }

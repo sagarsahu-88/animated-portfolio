@@ -8,7 +8,7 @@ import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
 const App = () => {
   return <div>
-  <Cursor/>
+        <Cursor/>
         <section id="Homepage">
         <Navbar/>
         <Hero/>

@@ -1,3 +1,4 @@
+@import"../../app.scss";
 .parallax{
     width: 100%;
     height: 100%;
@@ -9,6 +10,14 @@
 
     h1{
         font-size: 100px;
+        @include mobileAndroid{
+            font-size:70px ;
+            text-align: center;
+
+                
+                
+               
+        }
     }
     .mountains{
         background-image: url("/mountains.png");
@@ -18,6 +27,12 @@
         height: 100%;
         position: absolute;
         z-index: 3;
+
+        @include mobileAndroid{
+            background-size: contain;
+            background-repeat: no-repeat;
+      
+        }
 
     }
     .planets{
@@ -29,6 +44,12 @@
         position: absolute;
         z-index: 2;
 
+        @include mobileAndroid{
+            background-size: contain;
+            background-repeat: no-repeat;
+      
+        }
+
     }
     .stars{
         background-image: url("/stars.png");
@@ -38,6 +59,12 @@
         height: 100%;
         position: absolute;
         z-index: 1;
+
+        @include mobileAndroid{
+            background-size: contain;
+            
+      
+        }
 
     }
     
