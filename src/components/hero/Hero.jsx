@@ -1,5 +1,9 @@
+import Cursor from "../cursor/Cursor";
 import "./hero.scss";
 import {motion} from "framer-motion";
+import { useNavigate  } from "react-router-dom";
+import Contact from "../contact/Contact";
+
 
 
 
@@ -42,6 +46,9 @@ const sliderVariants={
 };
 
 const Hero = () => {
+    const navigate = useNavigate ();
+    const handleClick = () => navigate('/Contact');
+   
     
 
    
@@ -54,12 +61,12 @@ const Hero = () => {
     initial="initial" 
     animate="animate">
 
-    <motion.h2 variants={textVariants}>SAGAR</motion.h2>
-    <motion.h1 variants={textVariants}>Web developer and UI designer</motion.h1>
+    <motion.h2 variants={textVariants}>ByteWave Software Solution</motion.h2>
+    <motion.h1 variants={textVariants}>We help global brands Develop digital world</motion.h1>
      
      <motion.div variants={textVariants} className="buttons">
     <motion.button variants={textVariants} >Latest Work</motion.button>
-    <motion.button variants={textVariants} >Contact Me</motion.button>
+    <motion.button variants={textVariants} onClick={handleClick} >Contact Me</motion.button>
     </motion.div>
     <motion.img variants={textVariants} animate="scrollButton" src="scroll.png"/>
     </motion.div>

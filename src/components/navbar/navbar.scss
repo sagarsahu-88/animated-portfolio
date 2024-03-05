@@ -10,6 +10,7 @@
         justify-content: space-between;
         height: 100%;
 
+
         @include mobileAndroid{
             justify-content: flex-end;
             padding: 20px;
@@ -17,6 +18,13 @@
         span{
             font-weight: bold;
            margin-left: 40px;
+
+           img{
+            width: 100px;
+            height: auto;
+            
+        
+           }
 
            @include mobileAndroid{
             display: none;
