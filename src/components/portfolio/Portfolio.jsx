@@ -7,7 +7,7 @@ const items=[
     {
         id:1,
         title:"React Ecommerce",
-        img:"https://1linedigital.net/wp-content/uploads/2023/03/82528385-a73f-488f-9003-513321283a6b.png",
+        img:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.uplabs.com%2Fposts%2Ffashion-e-commerce-landing-page-a3948020-7d81-429c-b3a9-3d06eb03bda4&psig=AOvVaw2dj6YcIvfsW6MoNRbVtW-6&ust=1710602452088000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKilrO7I9oQDFQAAAAAdAAAAABAE",
         desc:"An eCommerce website is an online destination where buyers shop for goods and sellers offer products and services.Easy functionality with some Features Ex: sorting,Filter,Price,Add to cart,Payment Gateway.  ",
         link:"https://ecommerce-backend-rouge.vercel.app/login"
     },
